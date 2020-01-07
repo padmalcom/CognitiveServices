@@ -8,17 +8,16 @@ RUN /usr/bin/yum --assumeyes install epel-release gcc
 RUN /usr/bin/yum --assumeyes install python36u python36pip
 
 RUN mkdir /app
-RUN mkdir /encodings/
+RUN mkdir /known/
 
-COPY entityextraction.py /app/
+COPY facedetection.py /app/
 COPY ./requirements.txt /app/
+COPY known/ /known/
 
 WORKDIR /app
 
 RUN pip3 install --upgrade pip
 RUN pip3 install -r requirements.txt
-RUN python3 -m spacy download en_core_web_lg
-RUN python3 -m spacy download en_core_web_sm
 
 ENTRYPOINT ["python3"]
-CMD ["entityextraction.py"]
+CMD ["facedetection.py"]

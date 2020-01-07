@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: entity-extraction-service
+  name: face-detection-service
 spec:
   selector:
-    app: entity-extraction
+    app: face-detection
   ports:
   - protocol: "TCP"
     port: 6000
@@ -15,20 +15,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: entity-extraction
+  name: face-detection
 spec:
   selector:
     matchLabels:
-      app: entity-extraction
+      app: face-detection
   replicas: 2
   template:
     metadata:
       labels:
-        app: entity-extraction
+        app: face-detection
     spec:
       containers:
-      - name: entityextraction
-        image: entityextraction:latest
+      - name: facedetection
+        image: facedetection:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000

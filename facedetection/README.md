@@ -1,3 +1,3 @@
-# entityextraction
+# facedetection
 
-Using NLP methods for entity extraction.
+Face detection service. Known faces should be placed in folder "known".
