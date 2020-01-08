@@ -21,3 +21,5 @@ RUN pip3 install -f https://download.pytorch.org/whl/torch_stable.html -r requir
 # centos image
 ENTRYPOINT ["python3"]
 CMD ["texttospeech.py"]
+
+EXPOSE 5000

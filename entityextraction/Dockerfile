@@ -21,3 +21,5 @@ RUN python3 -m spacy download en_core_web_sm
 
 ENTRYPOINT ["python3"]
 CMD ["entityextraction.py"]
+
+EXPOSE 5000
