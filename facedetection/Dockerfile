@@ -10,11 +10,11 @@ RUN /usr/bin/yum --assumeyes group install "Development Tools"
 
 
 RUN mkdir /app
-RUN mkdir /known/
+RUN mkdir /app/known
 
 COPY facedetection.py /app/
 COPY ./requirements.txt /app/
-COPY known/ /known/
+COPY known/ /app/known/
 
 WORKDIR /app
 
@@ -23,3 +23,5 @@ RUN pip3 install -r requirements.txt
 
 ENTRYPOINT ["python3"]
 CMD ["facedetection.py"]
+
+EXPOSE 5000
