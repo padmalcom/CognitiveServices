@@ -8,7 +8,7 @@ spec:
   ports:
   - protocol: "TCP"
     port: 6003
-    targetPort: 5003
+    targetPort: 5000
   type: LoadBalancer
 
 ---
@@ -31,4 +31,4 @@ spec:
         image: translation:latest
         imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 5003
+        - containerPort: 5000

@@ -31,4 +31,4 @@ spec:
         image: textgeneration:latest
         imagePullPolicy: IfNotPresent
         ports:
-        - containerPort: 5001
+        - containerPort: 5000
