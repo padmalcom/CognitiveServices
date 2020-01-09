@@ -3,4 +3,3 @@ A question answering service that can either use a text as context to extract th
 
 Todo:
 - Answer questions from PDF, Docx
-- Answer questions from URL
