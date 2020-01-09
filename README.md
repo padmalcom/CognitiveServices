@@ -1,6 +1,8 @@
 # CognitiveServices
 A collection of cognitive services based on python rest services. Can be packaged as docker containers.
 
+![Cognitive Services](https://github.com/padmalcom/CognitiveServices/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
 Each service can be built and ran by executing the following two commands from each service folder:
 ```
 docker build -t [servicename] .
@@ -14,3 +16,11 @@ conda create -n [servicename] python=3.6
 conda activate [servicename]
 python [servicename].py
 ```
+
+## Backlog
+There are multiple services that I plan to add. If you have any wishes feel free to add an issue.
+- Text summarization
+- Language detection
+- Speech-to-text
+- Speaker identification
+- ...

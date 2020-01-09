@@ -1,3 +1,3 @@
-# entityextraction
+# Entity extraction
 
-Using NLP methods for entity extraction.
+This service uses nlp functionality to extract entities from text.

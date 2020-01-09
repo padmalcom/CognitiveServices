@@ -1,3 +1,3 @@
-# facedetection
+# Face Detection
 
-Face detection service. Known faces should be placed in folder "known".
+This face detection service finds faces in images and returns bounding boxes as well as names of a set of known people (see folder "known").
