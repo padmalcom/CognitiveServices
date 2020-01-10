@@ -19,6 +19,7 @@ python [servicename].py
 
 ## Backlog
 There are multiple services that I plan to add. If you have any wishes feel free to add an issue.
+- Add an about function for each service with information about and thanks to all model providers
 - Text summarization
 - Language detection
 - Speech-to-text
