@@ -14,6 +14,7 @@ or simply via python by executing:
 ```
 conda create -n [servicename] python=3.6
 conda activate [servicename]
+pip install -r requirements.txt
 python [servicename].py
 ```
 
