@@ -54,4 +54,4 @@ class texttospeech(Resource):
 if __name__ == '__main__':
   if not os.path.exists(UPLOAD_DIRECTORY):
     os.makedirs(UPLOAD_DIRECTORY)
-  app.run(host='0.0.0.0', port=5002)
+  app.run(host='0.0.0.0', port=5000)
