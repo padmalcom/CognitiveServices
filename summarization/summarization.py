@@ -16,7 +16,7 @@ api = Api(app=app, version='1.0', title='Text summarization Service', descriptio
 
 @api.doc(params={})
 @api.route('/cs/v1/nlp/summarization')
-class QuestionAnswering(Resource):
+class Summarization(Resource):
  
   @api.expect(text_input)
   def post(self):
