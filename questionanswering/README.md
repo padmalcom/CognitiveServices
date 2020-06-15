@@ -3,3 +3,10 @@ A question answering service that can either use a text as context to extract th
 
 Todo:
 - Answer questions from PDF, Docx
+
+## Description
+- Domain: NLP
+- Abbreviation: QA
+- Name: Question Answering
+- Keywords: NLP, Questions, Chatbot, Fragen, Antworten
+- Description: Dieser Service beantwortet Fragen zu bereitgestellten Texten.
