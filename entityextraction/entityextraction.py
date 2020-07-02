@@ -1,7 +1,7 @@
 import io
 import json
 from flask import Flask, jsonify, request
-from flask_restplus import Api, Resource
+from flask_restplus import Api, Resource, reqparse
 import spacy
 import en_core_web_lg
 import en_core_web_sm
@@ -10,10 +10,20 @@ from flask import abort
 app = Flask(__name__)
 api = Api(app=app, version='1.0', title='A simple NER service.', description='This service provides functions to extract entities from text.')
 
-@api.doc(params={'model': 'Either a small or a large nlp model.', 'text': 'The text to parse.'})
-@api.route('/cs/v1/nlp/entityextraction/<string:model>/<string:text>')
+input_parameters = reqparse.RequestParser()
+input_parameters.add_argument(name="text", location="form", required=True, help="The text to analyze.")
+input_parameters.add_argument(name="model", location="form", required=True, help="Choose between a small (fast) and a large (better detection) model.", choices=("small","large"))
+
+@api.doc(params={})
+@api.route('/cs/v1/nlp/entityextraction', methods=["POST"])
 class entityextraction(Resource):
-  def get(self, model, text):
+
+  @api.expect(input_parameters)
+  def post(self):
+  
+    args = input_parameters.parse_args()
+    text = args['text']
+    model = args['model']
 
     if text == "":
       abort(400, 'Please provide a non-empty text.')
