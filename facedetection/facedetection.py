@@ -55,7 +55,7 @@ class facedetection(Resource):
         name = known_face_names[best_match_index]
         
       if matches:
-        results.append("{dimensions:("+str(top) + "," + str(left) + "," + str(bottom) + "," + str(right) + "), name:'" + name + "'}")
+        results.append("{dimensions:("+str(left) + "," + str(top) + "," + str(right) + "," + str(bottom) + "), name:'" + name + "'}")
     return jsonify(results)
     
   @api.expect(file_upload)
