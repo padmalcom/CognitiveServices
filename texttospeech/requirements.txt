@@ -19,7 +19,7 @@ MarkupSafe==1.1.1
 more-itertools==7.2.0
 numba==0.46.0
 numpy==1.17.4
-Pillow==7.1.0
+Pillow==8.1.1
 pycparser==2.19
 pyrsistent==0.15.5
 pytz==2019.3
