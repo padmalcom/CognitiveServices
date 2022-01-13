@@ -16,7 +16,7 @@ jsonschema==3.2.0
 MarkupSafe==1.1.1
 more-itertools==7.2.0
 numpy==1.17.4
-Pillow==7.1.0
+Pillow==9.0.0
 pyrsistent==0.15.5
 pytz==2019.3
 regex==2019.11.1
