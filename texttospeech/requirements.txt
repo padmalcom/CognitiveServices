@@ -18,7 +18,7 @@ llvmlite==0.30.0
 MarkupSafe==1.1.1
 more-itertools==7.2.0
 numba==0.46.0
-numpy==1.17.4
+numpy==1.22.0
 Pillow==7.1.0
 pycparser==2.19
 pyrsistent==0.15.5
